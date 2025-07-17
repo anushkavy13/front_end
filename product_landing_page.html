@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CoffeeTime - Fresh Coffee Delivered</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff8f0;
+  color: #3e2f2f;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #4b2e2e;
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+
+#nav-bar {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: #fdf1e1;
+}
+
+#form input[type="email"] {
+  padding: 10px;
+  margin-top: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4b2e2e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#features {
+  padding: 40px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.feature {
+  margin: 20px 0;
+}
+
+#how-it-works {
+  padding: 40px 20px;
+  background: #fdf1e1;
+  text-align: center;
+}
+
+#pricing {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  background: #fff;
+}
+
+.plan {
+  background-color: #fff3e0;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #dcb08a;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+footer {
+  background-color: #4b2e2e;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  #pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #form input[type="email"],
+  #form input[type="submit"] {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+  </style>
+</head>
+
+
+<body>
+  <header id="header">
+    <img id="header-img" src="https://i.imgur.com/bT1WfVz.png" alt="CoffeeTime Logo" width="60">
+    <nav id="nav-bar">
+      <a class="nav-link" href="#features">Features</a>
+      <a class="nav-link" href="#how-it-works">How It Works</a>
+      <a class="nav-link" href="#pricing">Pricing</a>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h1>Start Your Day With CoffeeTime</h1>
+    <p>Fresh, locally roasted beans delivered to your door.</p>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input id="email" type="email" name="email" placeholder="Enter your email" required>
+      <input id="submit" type="submit" value="Get Started">
+    </form>
+  </section>
+
+  <section id="features">
+    <h2>Why CoffeeTime?</h2>
+    <div class="feature">
+      <h3>☕ Fresh Beans</h3>
+      <p>Sourced from premium growers and roasted weekly.</p>
+    </div>
+    <div class="feature">
+      <h3>📦 Flexible Delivery</h3>
+      <p>Pause, skip, or customize your monthly box anytime.</p>
+    </div>
+    <div class="feature">
+      <h3>💳 No Commitment</h3>
+      <p>Cancel anytime. No hidden charges.</p>
+    </div>
+  </section>
+
+  <section id="how-it-works">
+    <h2>Watch How It Works</h2>
+    <iframe 
+      id="video" 
+      width="560" 
+      height="315" 
+      src="https://www.youtube.com/embed/9fyz3Yq2j9s" 
+      frameborder="0" 
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <section id="pricing">
+    <h2>Choose Your Plan</h2>
+    <div class="plan">
+      <h3>Starter Pack</h3>
+      <p>$10/month</p>
+      <p>1 bag of beans</p>
+    </div>
+    <div class="plan">
+      <h3>Classic Box</h3>
+      <p>$18/month</p>
+      <p>2 bags + 1 bonus sample</p>
+    </div>
+    <div class="plan">
+      <h3>Barista Bundle</h3>
+      <p>$28/month</p>
+      <p>4 bags + gift item</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 CoffeeTime. All rights reserved.</p>
+  </footer>
+</body>
+</html>
