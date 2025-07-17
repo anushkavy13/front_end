@@ -1,9 +1,7 @@
 # CoffeeTime – Product Landing Page ☕
 
-A responsive product landing page built using HTML, CSS, and basic JavaScript.
+A responsive product landing page built using HTML and CSS
 
-## 🔗 Live Demo
-[Click here to view](https://yourusername.github.io/coffeetime)
 
 ## 🚀 Features
 - Brand header and hero section
